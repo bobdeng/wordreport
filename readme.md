@@ -4,3 +4,18 @@
 ## 使用方法
 
 见测试代码
+
+```
+    <dependency>
+	    <groupId>com.github.bobdeng</groupId>
+	    <artifactId>wordreport</artifactId>
+	    <version>Tag</version>
+	</dependency>
+	
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
