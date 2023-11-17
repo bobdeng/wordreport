@@ -18,11 +18,11 @@ import java.util.logging.Level;
 public class WordReport {
     private final ReportData reportData;
 
-    WordReport(ReportData reportData) {
+    public WordReport(ReportData reportData) {
         this.reportData = reportData;
     }
 
-    byte[] output(byte[] templateFile) throws IOException {
+    public byte[] output(byte[] templateFile) throws IOException {
         XWPFDocument srcDoc = new XWPFDocument(new ByteArrayInputStream(templateFile));
         srcDoc.getHeaderList().forEach(header -> runBody(header.getTables(), header.getParagraphs()));
         srcDoc.getFooterList().forEach(footer -> runBody(footer.getTables(), footer.getParagraphs()));
