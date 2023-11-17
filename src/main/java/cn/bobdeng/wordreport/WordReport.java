@@ -15,7 +15,7 @@ import java.util.function.Consumer;
 import java.util.logging.Level;
 
 @Log
-class WordReport {
+public class WordReport {
     private final ReportData reportData;
 
     WordReport(ReportData reportData) {
